@@ -238,13 +238,13 @@ const nextMonth = () => {
       border-right: 1px solid #dbdbdb;
       border-bottom: 1px solid #dbdbdb;
 
+      &.event {
+        background-color: #ffffaa;
+      }
+
       &.current {
         color: #ffff;
         background-color: #ff5656;
-      }
-
-      &.event {
-        background-color: #ffffaa;
       }
 
       &.other-days {
