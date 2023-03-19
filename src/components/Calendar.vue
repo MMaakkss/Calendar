@@ -132,9 +132,9 @@ const monthName = computed(() => {
   );
 });
 
-const currentDaysMonth = getDaysInMonth(
-  new Date(currentYear.value, currentMonth.value)
-);
+const currentDaysMonth = computed(() => {
+  return getDaysInMonth(new Date(currentYear.value, currentMonth.value));
+});
 
 const prevMonthDays = computed(() => {
   let year =
